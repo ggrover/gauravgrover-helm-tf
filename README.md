@@ -122,6 +122,15 @@ helm-consul-demo-consul-webhook-cert-manager-7fb5f5c775-8lj9q   1/1     Running 
 - Verify S3 bucket remote state. You should see `helm-consul-demo` in the bucket
 ![ S3 Bucket ](./images/Screen%20Shot%202023-02-05%20at%204.52.21%20PM.png)
 
+- Verify helm-consul-demo-consul-ui by enabling kubectl port forwarding (EG `kubectl port-forward deployment/mongo 28015:27017`)
+For example setup port forwarding to http://localhost:60590
+
+![ UI ](./images/Screen%20Shot%202023-02-05%20at%2010.36.35%20PM.png)
+![ UI ](./images/Screen%20Shot%202023-02-05%20at%2010.36.42%20PM.png)
+![ UI ](./images/Screen%20Shot%202023-02-05%20at%2010.36.48%20PM.png)
+![ UI ](./images/Screen%20Shot%202023-02-05%20at%2010.36.55%20PM.png)
+![ UI ](./images/Screen%20Shot%202023-02-05%20at%2010.37.02%20PM.png)
+
 ## Destroy
 
 - To destroy resources do `terraform destory`
