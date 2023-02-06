@@ -5,7 +5,7 @@ variable "chart_name" {
 
 variable "namespace" {
   description = "K8s namespace to use for chart install"
-  default = "consul"
+  default = "default"
 }
 
 variable "server_replicas" {
